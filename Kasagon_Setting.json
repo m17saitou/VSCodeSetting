@@ -1,0 +1,79 @@
+{
+    "files.encoding": "utf8",
+    "files.autoGuessEncoding": true,
+    "window.zoomLevel":-0.4,
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Ricty Diminished'",
+    "editor.cursorStyle": "line",
+    "editor.suggestSelection": "first",
+
+
+    "github.gitAuthentication": false,
+
+    "workbench.editor.labelFormat": "medium",
+    "workbench.editor.splitSizing": "split",
+    "workbench.sideBar.location": "left",
+    "workbench.colorCustomizations": {
+        "panel.background": "#00080c",
+        "editor.background": "#000629",
+        "editorError.border": "#ff0000",
+        "tab.activeBackground": "#400065",
+        "sideBar.background": "#000305",
+        "editorLineNumber.activeForeground": "#ffffff",
+        "editorLineNumber.foreground": "#87f8e5",
+        "editor.lineHighlightBackground": "#000218",
+        "editor.lineHighlightBorder": "#b1ffff25",
+        "panel.border": "#ff0000",
+        "editorGroup.border": "#ffff00",
+        "sideBar.border": "#00ff00",
+        "editorGroupHeader.tabsBorder": "#00ffff",
+        "tab.border": "#00ffff",
+        "tab.activeBorderTop": "#00ffff",
+        "tab.activeModifiedBorder": "#00ffff"
+        
+    },
+
+    "terminal.integrated.fontFamily": "'Ricty Diminished'",
+    "terminal.integrated.fontSize":18,
+
+
+    "C_Cpp.updateChannel": "Insiders",
+    "fortran.includePaths":[
+        "/usr/local/include",
+        "/usr/local"
+    ],
+    "fortran.symbols":["function", "subroutine"],
+    "fortran.linterEnabled": true,
+    "explorer.confirmDelete": false,
+    "platformio-ide.disablePIOHomeStartup": true,
+    "workbench.startupEditor": "newUntitledFile",
+
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.latex.tools" : [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+             "-e",
+             "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+             "-e",
+             "$bibtex=q/pbibtex %O %B/",
+             "-e",
+             "$biber=q/biber %O --bblencoding=utf8 -u -U %B/",
+             "-e",
+             "$makeindex=q/upmendex %O -o %D %S/",
+             "-e",
+             "$dvipdf=q/dvipdfmx %O -o %D %S/",
+             "-norc",
+             "-gg",
+             "-pdfdvi",
+             "%DOC%"
+            ]
+        }
+        ],
+        "diffEditor.ignoreTrimWhitespace": true,
+        "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration"
+}
